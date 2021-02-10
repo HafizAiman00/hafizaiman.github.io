@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* HeaderBlog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(51, 102, 255);
+  color: rgb(9, 6, 58);
+}
+
+.header h1 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(rgba(31, 156, 104, 0.699), rgb(124, 39, 39));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background-color:lightsalmon ;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin: auto;
+  background: transparent;
+  text-align: center;
+}
+
+.card1 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin: auto;
+  background: transparent;
+  text-align: left;;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+table {
+    width: 600px;
+    margin: auto;
+}
+
+th, td {
+    text-align: center;
+}
+
+th, table, td {
+    border: 1px solid #b10442;
+    padding: 2px;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #ddd;
+}
+</style>
+</head>
+<body>
+
+  <div class="header">
+  <h1>LOUD KARAOKE CLUB</h1>
+  <p>- Melting pot of all lovers of karaoke and good music -</p>
+  </div>
+
+  <div class="topnav">
+    <a href="./homepage.html">Home</a>
+    <a href="./booking.html">Booking</a>
+    <a href="./contact.html">Contact us</a>
+    <a href="#" style="float:right"></a>
+  </div>
+  <!--JAVASCRIPT SUBMIT BUTTON-->
+  <script type="text/javascript">
+    function clickAlert(){
+      alert("Submitted!");
+    }
+	</script>
+
+  <div class="row">
+    <div class="leftcolumn">
+      
+      <div class="card">
+        <h2>! Book Your Room !</h2>
+        <!--TABLE-->
+        <table>
+          <tr>
+            <th> Schedule </th>
+            <th> (Weekdays)<br>10 AM - 12 PM </th>
+			<th> (Public Holidays)<br>10 AM - 12 PM </th>
+          </tr>
+          <tr>
+            <td> Small Room (4-5 Pax) </td>
+            <td> RM 28/hr </td>
+			<td> RM 38/hr </td>
+          </tr>
+          <tr>
+            <td> Medium Room (6-8 Pax) </td>
+            <td> RM 38/hr </td>
+			<td> RM 53/hr </td>
+          </tr>
+          <tr>
+            <td> Large Room (10-12 Pax) </td>
+            <td> RM 53/hr </td>
+			<td> RM 68/hr </td>
+          </tr>
+          
+        </table>
+        
+		<div class="row">
+			<div class="leftcolumn">
+			  <div class="card">
+				<h2>Details</h2>
+				<form action=""> <!--TEXT BOX-->
+				  <label for="fname">Name:</label><br>
+				  <input type="text" id="fname" name="fname"><br>
+				  <br> <!--RADIO BUTTON-->
+				  <label for="gender">Gender:</label><br>
+				  <input type="radio" id="male" name="gender" value="male">
+				  <label for="male">Male</label><br>
+				  <input type="radio" id="female" name="gender" value="female">
+				  <label for="female">Female</label><br>
+				  <input type="radio" id="other" name="gender" value="other">
+				  <label for="other">Other</label><br>
+				  <br>
+				 
+				  <label for="pref">Smoking or Not Smoking</label><br>
+				  <!--CHECK BOX-->
+				  <input type="checkbox" id="pref1" name="pref1" value="smoke">
+				  <label for="pref1"> Smoking.</label><br>
+				  <input type="checkbox" id="pref2" name="pref2" value="not smoke">
+				  <label for="pref2"> Not Smoking.</label><br>
+				  
+
+				  
+				  <br> 
+				  <label for="Room Type">Select Room Type :</label>
+					<select name="room" id="room">
+						<option value="type">Room Type</option>
+						<option value="Small">Small Room</option>
+						<option value="Medium">Medium Room</option>
+						<option value="Large">Large Room</option>
+					</select><br>
+					<br>
+					<label for="Time">Select Time Slot :</label>
+					<select name="time" id="time">
+						<option value="time">Time Slot</option>
+						<option value="time1">10:00 to 12:00</option>
+						<option value="time2">12:00 to 14:00</option>
+						<option value="time3">14:00 to 16:00</option>
+						<option value="time4">16:00 to 18:00</option>
+						<option value="time5">18:00 to 20:30</option>
+						<option value="time6">20:30 to 22:30</option>
+					</select><br>
+					<br>
+					<label for="date">Select a date :</label>
+					<input type="date" id="date" name="date">
+					<br>
+					<br>
+				  <input type="submit" onClick="clickAlert()" value="Submit">
+				</form>
+			  <p>Please do not hesitate to put your privacy datas as they are safe and sound with our organization.</p>
+			</div>
+        
+        </div>
+       </div>
+        <!--GRAPHIC-->
+        <img src="/image/image4.jpg" height="315" width="600" />
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Gallery</h3>
+      <img src="/image/image2.jpg"  width="100" height="350" class="fakeimg">
+      <img src="/image/image3.jpg"  width="100" height="350" class="fakeimg">
+    </div>
+      <div class="card">
+      <h3>Follow Us!</h3>
+      <!--UNORDERED-->
+      <div class="card1">
+        <ul>
+          <li>Instagram: @loudkaraoke</li>
+          <li>Office number: + 04 58375634</li>
+          <li>Fax number : 1-535-444-7000</li>
+          <li>Email: lk@loudkaraokeclub.com.my</li>
+        </ul>
+      
+      <!--UNORDERED-->
+      
+    </div>
+  </div>
+
+  <div class="footer">
+    <h2></h2>
+  </div>
+
+  </body>
+</html>

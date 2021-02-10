@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: rgb(51, 102, 255);
+  color: rgb(9, 6, 58);
+}
+
+.header h1 {
+  font-size: 50px;
+  background: -webkit-linear-gradient(rgba(31, 156, 104, 0.699), rgb(124, 39, 39));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: center;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+  background-color:lightpink ;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin: auto;
+  background: transparent;
+  text-align: center;
+}
+
+.card1 {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  margin: auto;
+  background: transparent;
+  text-align: left;;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+  <div class="header">
+  <h1>LOUD KARAOKE CLUB</h1>
+  <p>- Melting pot of all lovers of karaoke and good music -</p>
+  </div>
+
+  <div class="topnav">
+    <a href="./homepage.html">Home</a>
+    <a href="./booking.html">Booking</a>
+    <a href="./contact.html">Contact us</a>
+    <a href="#" style="float:right"></a>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>A Little Information About Us</h2>
+        <h5>10 May 2020</h5> 
+        <!--GRAPHIC-->
+        <img src="/image/img1.jpg" alt="logo" width="450" height="350" class="img">
+        <p>Loud Karaoke Club is a business that is established to be a pacesetter when it comes to how a standard karaoke bar should be run.</p>     <!--LINK-->
+        <p>We have the goal of assembling a team of dedicated workforce who will give our customers excellent customer service at all times. <a href="http://www.spk-ktv.com.my/">Supplyer!</a></p>
+        <p>a team that will ensure that we will continue to have repeated customers and a team that will indeed make us the melting pot for karaoke lovers in and around Malaysia.  </p>
+
+      </div>
+      <div class="card">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h3>Gallery</h3>
+      <img src="/image/image2.jpg"  width="100" height="350" class="fakeimg">
+      <img src="/image/image3.jpg"  width="100" height="350" class="fakeimg">
+    </div>
+      <div class="card">
+      <h3>Follow Us!</h3>
+      <!--UNORDERED-->
+      <div class="card1">
+        <ul>
+          <li>Instagram: @loudkaraoke</li>
+          <li>Office number: + 04 58375634</li>
+          <li>Fax number : 1-535-444-7000</li>
+          <li>Email: lk@loudkaraokeclub.com.my</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+<!--AUDIO-->
+  <div class="footer">
+    <p>Below is audio (a song), have a listen.</p>
+    <audio controls>
+    <source src="music1.mp3" type= audio/mp3></audio>
+  </div>
+
+  </body>
+</html>  
+  
